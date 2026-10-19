@@ -1,0 +1,310 @@
+[
+  {
+    "name": "First Steps",
+    "hint": "Drag or click commands into MAIN, then press Run. Walk to the beacon and Activate it.",
+    "heights": [
+      "1111"
+    ],
+    "pads": [
+      [3, 0]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Turn the Corner",
+    "hint": "Turning rotates the robot in place. Right turns are clockwise.",
+    "heights": [
+      "111",
+      "..1",
+      "..1"
+    ],
+    "pads": [
+      [2, 2]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Two Beacons",
+    "hint": "Every beacon must be powered. You have exactly enough slots - plan carefully.",
+    "heights": [
+      "1111",
+      "1..1",
+      "1111"
+    ],
+    "pads": [
+      [3, 0],
+      [0, 2]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Hop Up",
+    "hint": "Forward only works on level ground. Jump climbs one block up, or drops down any distance.",
+    "heights": [
+      "1123"
+    ],
+    "pads": [
+      [3, 0]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Over the Hill",
+    "hint": "What goes up must come down.",
+    "heights": [
+      "12321"
+    ],
+    "pads": [
+      [2, 0],
+      [4, 0]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Tower Turn",
+    "hint": "Climb, turn, keep climbing.",
+    "heights": [
+      "5..",
+      "4..",
+      "321"
+    ],
+    "pads": [
+      [0, 2],
+      [0, 0]
+    ],
+    "start": [2, 2, 2],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A"
+    ],
+    "limits": {
+      "main": 12
+    }
+  },
+  {
+    "name": "Procedures",
+    "hint": "MAIN is too small! Put a repeated pattern in P1, then call P1 from MAIN as often as you need.",
+    "heights": [
+      "11111",
+      "1...1",
+      "1...1",
+      "1...1",
+      "11111"
+    ],
+    "pads": [
+      [4, 0],
+      [4, 4],
+      [0, 4],
+      [0, 0]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1"
+    ],
+    "limits": {
+      "main": 6,
+      "p1": 8
+    }
+  },
+  {
+    "name": "Zigzag",
+    "hint": "Look for the pattern that repeats on the way up.",
+    "heights": [
+      "7...",
+      "65..",
+      ".43.",
+      "..21"
+    ],
+    "pads": [
+      [2, 2],
+      [1, 1],
+      [0, 0]
+    ],
+    "start": [3, 3, 2],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1"
+    ],
+    "limits": {
+      "main": 4,
+      "p1": 6
+    }
+  },
+  {
+    "name": "The Comb",
+    "hint": "Procedures can call other procedures. Use P2 for the trip down each tooth.",
+    "heights": [
+      "1111111",
+      ".1.1.1.",
+      ".1.1.1."
+    ],
+    "pads": [
+      [1, 2],
+      [3, 2],
+      [5, 2]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1",
+      "P2"
+    ],
+    "limits": {
+      "main": 4,
+      "p1": 6,
+      "p2": 8
+    }
+  },
+  {
+    "name": "Self-Reference",
+    "hint": "A procedure can call itself. The robot stops as soon as every beacon is lit.",
+    "heights": [
+      "1111111111"
+    ],
+    "pads": [
+      [2, 0],
+      [4, 0],
+      [6, 0],
+      [8, 0]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1"
+    ],
+    "limits": {
+      "main": 2,
+      "p1": 4
+    }
+  },
+  {
+    "name": "Pyramid",
+    "hint": "Circle the base, then make for the summit.",
+    "heights": [
+      "12321",
+      "23432",
+      "34543",
+      "23432",
+      "12321"
+    ],
+    "pads": [
+      [4, 0],
+      [4, 4],
+      [0, 4],
+      [0, 0],
+      [2, 2]
+    ],
+    "start": [0, 0, 0],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1",
+      "P2"
+    ],
+    "limits": {
+      "main": 6,
+      "p1": 8,
+      "p2": 8
+    }
+  },
+  {
+    "name": "Grand Staircase",
+    "hint": "Two slots in MAIN. Six in P1. A long way to the top.",
+    "heights": [
+      "9....",
+      "87...",
+      ".65..",
+      "..43.",
+      "...21"
+    ],
+    "pads": [
+      [3, 3],
+      [2, 2],
+      [1, 1],
+      [0, 0]
+    ],
+    "start": [4, 4, 2],
+    "commands": [
+      "F",
+      "L",
+      "R",
+      "J",
+      "A",
+      "P1"
+    ],
+    "limits": {
+      "main": 2,
+      "p1": 6
+    }
+  }
+]
